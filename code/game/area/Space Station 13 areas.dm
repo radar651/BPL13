@@ -1494,7 +1494,7 @@ var/list/ghostteleportlocs = list()
 	music = 'sound/ambience/signal.ogg'
 
 /area/medical/reception
-	name = "\improper Medbay Reception"
+	name = "\improper Hospital Reception"
 	icon_state = "medbay"
 	music = 'sound/ambience/signal.ogg'
 
@@ -1565,8 +1565,8 @@ var/list/ghostteleportlocs = list()
 	icon_state = "morgue"
 	ambientsounds = list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
 
-/area/medical/chemistry
-	name = "\improper Chemistry"
+/area/medical/pharmacy
+	name = "\improper Pharmacy"
 	icon_state = "chem"
 
 /area/medical/surgery
@@ -1824,7 +1824,7 @@ area/security/podbay
 /area/quartermaster/Warehouse
 	name = "\improper Warehouse"
 	icon_state = "quartoffice"
-	
+
 /area/quartermaster/office
 	name = "\improper Cargo Office"
 	icon_state = "quartoffice"
@@ -1832,7 +1832,7 @@ area/security/podbay
 /area/quartermaster/lobby
 	name = "\improper Cargo Lobby"
 	icon_state = "quartoffice"
-	
+
 /area/quartermaster/storage
 	name = "\improper Cargo Bay"
 	icon_state = "quartstorage"
