@@ -1124,6 +1124,22 @@ var/list/ghostteleportlocs = list()
 	name = "\improper Dormitories"
 	icon_state = "Sleep"
 
+/area/crew_quarters/civlian_barracks1
+	name = "\improper Civlian Barracks # 1"
+	icon_state = "Sleep"
+
+/area/crew_quarters/civlian_barracks2
+	name = "\improper Civlian Barracks # 2"
+	icon_state = "Sleep"
+
+/area/crew_quarters/civlian_barracks3
+	name = "\improper Civlian Barracks # 3"
+	icon_state = "Sleep"
+
+/area/crew_quarters/sec_barracks
+	name = "\improper Secuirty Barracks"
+	icon_state = "Sleep"
+
 /area/crew_quarters/toilet
 	name = "\improper Dormitory Toilets"
 	icon_state = "toilet"
@@ -1801,10 +1817,22 @@ area/security/podbay
 
 ////////////WORK IN PROGRESS//////////
 
+/area/quartermaster/woffice
+	name = "\improper Warehouse Office"
+	icon_state = "quartoffice"
+
+/area/quartermaster/Warehouse
+	name = "\improper Warehouse"
+	icon_state = "quartoffice"
+	
 /area/quartermaster/office
 	name = "\improper Cargo Office"
 	icon_state = "quartoffice"
 
+/area/quartermaster/lobby
+	name = "\improper Cargo Lobby"
+	icon_state = "quartoffice"
+	
 /area/quartermaster/storage
 	name = "\improper Cargo Bay"
 	icon_state = "quartstorage"

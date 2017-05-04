@@ -11,8 +11,7 @@
 // END_PREFERENCES
 // BEGIN_INCLUDE
 #include "_maps\__MAP_DEFINES.dm"
-#include "_maps\cyberiad.dm"
-#include "_maps\map_files\BPL13\main.dmm"
+#include "_maps\bpl.dm"
 #include "code\_compile_options.dm"
 #include "code\hub.dm"
 #include "code\world.dm"
@@ -335,7 +334,6 @@
 #include "code\datums\wires\robot.dm"
 #include "code\datums\wires\smartfridge.dm"
 #include "code\datums\wires\syndicatebomb.dm"
-#include "code\datums\wires\tesla_coil.dm"
 #include "code\datums\wires\vending.dm"
 #include "code\datums\wires\wires.dm"
 #include "code\defines\vox_sounds.dm"
@@ -2124,7 +2122,6 @@
 #include "code\modules\shuttle\assault_pod.dm"
 #include "code\modules\shuttle\emergency.dm"
 #include "code\modules\shuttle\on_move.dm"
-#include "code\modules\shuttle\ripple.dm"
 #include "code\modules\shuttle\shuttle.dm"
 #include "code\modules\shuttle\shuttle_manipulator.dm"
 #include "code\modules\shuttle\supply.dm"
