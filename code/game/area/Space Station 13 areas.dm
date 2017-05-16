@@ -807,7 +807,7 @@ var/list/ghostteleportlocs = list()
 /area/prison/morgue
 	name = "\improper Prison Morgue"
 	icon_state = "morgue"
-	
+
 /area/medical/chemistry
 	name = "\improper Chemistry"
 	icon_state = "chem"
@@ -1491,6 +1491,11 @@ var/list/ghostteleportlocs = list()
 	icon_state = "medbay3"
 	music = 'sound/ambience/signal.ogg'
 
+/area/medical/medbay4
+	name = "\improper Medbay"
+	icon_state = "medbay"
+	music = 'sound/ambience/signal.ogg'
+
 
 /area/medical/biostorage
 	name = "\improper Secondary Storage"
@@ -1584,6 +1589,11 @@ var/list/ghostteleportlocs = list()
 /area/medical/surgery2
 	name = "\improper Surgery 2"
 	icon_state = "surgery2"
+
+
+/area/medical/surgery3
+	name = "\improper Surgery 3"
+	icon_state = "surgery"
 
 /area/medical/surgeryobs
 	name = "\improper Surgery Observation"
