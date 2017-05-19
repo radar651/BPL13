@@ -1046,6 +1046,11 @@ var/list/ghostteleportlocs = list()
 	icon_state = "meeting"
 	music = null
 
+/area/bridge/command_center_lobby
+	name = "\improper Command Center Lobby"
+	icon_state = "bridge"
+	music = "signal"
+
 /area/crew_quarters/captain
 	name = "\improper Captain's Office"
 	icon_state = "captain"
@@ -1536,6 +1541,19 @@ var/list/ghostteleportlocs = list()
 /area/medical/patient_c
 	name = "\improper Isolation C"
 	icon_state = "patients"
+
+/area/medical/patient_D
+	name = "\improper Isolation D"
+	icon_state = "patients"
+
+/area/medical/patient_E
+	name = "\improper Isolation E"
+	icon_state = "patients"
+
+/area/medical/patient_F
+	name = "\improper Isolation F"
+	icon_state = "patients"
+
 
 /area/medical/iso_access
 	name = "\improper Isolation Access"
