@@ -1,4 +1,3 @@
-
 /obj/tram/tram_controller
 	name = ""
 	desc = "tram controller"

@@ -15,8 +15,6 @@ z7 = empty
 #if !defined(MAP_FILE)
 
         #include "map_files\BPL13\main.dmm"
-        #include "map_files\BPL13\Zquarry.dmm"
-        #include "map_files\BPL13\zstation.dmm"
 
         #define MAP_FILE "main.dmm"
         #define MAP_NAME "BPL 13"

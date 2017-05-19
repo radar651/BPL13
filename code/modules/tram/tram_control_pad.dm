@@ -6,10 +6,7 @@
 	anchored = 1
 	var/obj/tram/tram_controller/tram_linked
 
-/obj/tram/controlpad/attack_hand(mob/user)
-	if(..())
-		return 1
-
+/obj/tram/controlpad/attack_hand(var/mob/user)
 	usr.set_machine(src)
 	if(!tram_linked)	return
 	var/dat = "Tram Controller"
