@@ -103,13 +103,13 @@ LINEN BINS
 	item_color = "cmo"
 
 /obj/item/weapon/bedsheet/hos
-	name = "head of security's bedsheet"
+	name = "captain of the guards's bedsheet"
 	desc = "It is decorated with a shield emblem.  While crime doesn't sleep, you do, but you are still THE LAW!"
 	icon_state = "sheethos"
 	item_color = "hosred"
 
 /obj/item/weapon/bedsheet/hop
-	name = "head of personnel's bedsheet"
+	name = "Colony Resource Director's bedsheet"
 	desc = "It is decorated with a key emblem.  For those rare moments when you can rest and cuddle with Ian without someone screaming for you over the radio."
 	icon_state = "sheethop"
 	item_color = "hop"

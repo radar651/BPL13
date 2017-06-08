@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/captains
-	name = "captain's locker"
+	name = "Overseer's locker"
 	req_access = list(access_captain)
 	icon_state = "capsecure1"
 	icon_closed = "capsecure"
@@ -29,13 +29,12 @@
 		new /obj/item/device/radio/headset/heads/captain/alt(src)
 		new /obj/item/clothing/gloves/color/captain(src)
 		new /obj/item/weapon/storage/belt/rapier(src)
-		new /obj/item/weapon/gun/energy/gun(src)
 		new /obj/item/weapon/door_remote/captain(src)
 
 
 
 /obj/structure/closet/secure_closet/hop
-	name = "head of personnel's locker"
+	name = "Colony Resource Director's locker"
 	req_access = list(access_hop)
 	icon_state = "hopsecure1"
 	icon_closed = "hopsecure"
@@ -53,13 +52,12 @@
 		new /obj/item/weapon/storage/box/ids(src)
 		new /obj/item/weapon/storage/box/PDAs(src)
 		new /obj/item/clothing/suit/armor/vest(src)
-		new /obj/item/weapon/gun/energy/gun(src)
 		new /obj/item/device/flash(src)
 		new /obj/item/clothing/accessory/petcollar(src)
 		new /obj/item/weapon/door_remote/civillian(src)
 
 /obj/structure/closet/secure_closet/hop2
-	name = "head of personnel's attire"
+	name = "Colony Resource Director's attire"
 	req_access = list(access_hop)
 	icon_state = "hopsecure1"
 	icon_closed = "hopsecure"
@@ -86,7 +84,7 @@
 
 
 /obj/structure/closet/secure_closet/hos
-	name = "head of security's locker"
+	name = "captain of the guard's locker"
 	req_access = list(access_hos)
 	icon_state = "hossecure1"
 	icon_closed = "hossecure"
@@ -248,7 +246,6 @@
 		new /obj/item/clothing/suit/armor/vest/blueshield(src)
 		new /obj/item/clothing/suit/storage/blueshield(src)
 		new /obj/item/clothing/shoes/centcom(src)
-		new /obj/item/clothing/accessory/holster(src)
 		new /obj/item/clothing/accessory/blue(src)
 		new /obj/item/clothing/shoes/jackboots/jacksandals(src)
 
@@ -396,6 +393,267 @@
 		new /obj/item/clothing/head/powdered_wig (src)
 		new /obj/item/weapon/storage/briefcase(src)
 
+
+	/obj/structure/closet/secure_closet/ERT1
+	name = "ERT Auto rifle locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/weapon/gun/projectile/automatic/wt550
+		new	/obj/item/weapon/gun/projectile/automatic/wt550
+		new /obj/item/weapon/gun/projectile/automatic/wt550
+		new /obj/item/weapon/gun/projectile/automatic/wt550
+		new /obj/item/ammo_box/magazine/wt550m9
+		new /obj/item/ammo_box/magazine/wt550m9
+		new /obj/item/ammo_box/magazine/wt550m9
+		new /obj/item/ammo_box/magazine/wt550m9
+		new /obj/item/ammo_box/magazine/wt550m9
+		new /obj/item/ammo_box/magazine/wt550m9
+		new /obj/item/ammo_box/magazine/wt550m9
+		new /obj/item/ammo_box/magazine/wt550m9
+		new /obj/item/ammo_box/magazine/wt550m9/wtap
+		new /obj/item/ammo_box/magazine/wt550m9/wtap
+		new /obj/item/ammo_box/magazine/wt550m9/wtap
+		new /obj/item/ammo_box/magazine/wt550m9/wtap
+
+
+
+		/obj/structure/closet/secure_closet/ERT2
+	name = "ERT Riot gear locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/clothing/head/helmet/riot
+		new /obj/item/clothing/head/helmet/riot
+		new /obj/item/clothing/head/helmet/riot
+		new /obj/item/clothing/head/helmet/riot
+		new /obj/item/clothing/head/helmet/riot
+		new /obj/item/clothing/head/helmet/riot
+		new /obj/item/clothing/suit/armor/riot
+		new /obj/item/clothing/suit/armor/riot
+		new /obj/item/clothing/suit/armor/riot
+		new /obj/item/clothing/suit/armor/riot
+		new /obj/item/clothing/suit/armor/riot
+		new /obj/item/clothing/suit/armor/riot
+		new /obj/item/weapon/shield/riot
+		new /obj/item/weapon/shield/riot
+		new /obj/item/weapon/shield/riot
+		new /obj/item/weapon/shield/riot
+		new /obj/item/weapon/shield/riot
+		new /obj/item/weapon/shield/riot
+
+
+	/obj/structure/closet/secure_closet/ERT3
+	name = "ERT Riot weapons locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/weapon/melee/classic_baton/telescopic
+		new /obj/item/weapon/melee/classic_baton/telescopic
+		new /obj/item/weapon/melee/classic_baton/telescopic
+		new /obj/item/weapon/melee/classic_baton/telescopic
+		new /obj/item/weapon/melee/classic_baton/telescopic
+		new /obj/item/weapon/melee/classic_baton/telescopic
+		new /obj/item/weapon/storage/box/flashbangs
+		new /obj/item/weapon/storage/box/flashbangs
+		new /obj/item/weapon/storage/box/teargas
+		new /obj/item/weapon/storage/box/teargas
+		new /obj/item/weapon/gun/projectile/shotgun/riot
+		new /obj/item/weapon/gun/projectile/shotgun/riot
+		new /obj/item/weapon/gun/projectile/shotgun/riot
+		new /obj/item/weapon/gun/projectile/shotgun/riot
+		new /obj/item/weapon/gun/projectile/shotgun/riot
+		new /obj/item/weapon/gun/projectile/shotgun/riot
+		new /obj/item/ammo_box/shotgun/rubbershot
+		new /obj/item/ammo_box/shotgun/rubbershot
+		new /obj/item/ammo_box/shotgun/rubbershot
+		new /obj/item/ammo_box/shotgun/rubbershot
+		new /obj/item/ammo_box/shotgun/rubbershot
+		new /obj/item/ammo_box/shotgun/rubbershot
+
+	/obj/structure/closet/secure_closet/ERT4
+	name = "ERT Side arms locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/clothing/accessory/holster
+		new /obj/item/clothing/accessory/holster
+		new /obj/item/clothing/accessory/holster
+		new /obj/item/clothing/accessory/holster
+		new /obj/item/clothing/accessory/holster
+		new /obj/item/clothing/accessory/holster
+		new /obj/item/weapon/gun/projectile/automatic/pistol/enforcer45
+		new /obj/item/weapon/gun/projectile/automatic/pistol/enforcer45
+		new /obj/item/weapon/gun/projectile/automatic/pistol/enforcer45
+		new /obj/item/weapon/gun/projectile/automatic/pistol/enforcer45
+		new /obj/item/weapon/gun/projectile/automatic/pistol/enforcer45
+		new /obj/item/weapon/gun/projectile/automatic/pistol/enforcer45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+		new /obj/item/ammo_box/magazine/m45
+
+
+	/obj/structure/closet/secure_closet/ERT5
+	name = "ERT Heavy arms locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/weapon/gun/projectile/automatic/sniper_rifle
+		new /obj/item/ammo_box/magazine/sniper_rounds
+		new /obj/item/ammo_box/magazine/sniper_rounds
+		new /obj/item/weapon/gun/projectile/automatic/l6_saw
+		new /obj/item/ammo_box/magazine/mm556x45
+		new /obj/item/weapon/gun/rocketlauncher
+		new /obj/item/ammo_casing/rocket
+		new /obj/item/ammo_casing/rocket
+		new /obj/item/ammo_casing/rocket
+		new	/obj/item/weapon/gun/projectile/shotgun/automatic/dual_tube
+		new	/obj/item/weapon/gun/projectile/shotgun/automatic/dual_tube
+		new	/obj/item/ammo_box/shotgun/buck
+		new	/obj/item/ammo_box/shotgun/buck
+		new	/obj/item/ammo_box/shotgun/stun
+		new	/obj/item/ammo_box/shotgun/stun
+
+
+	/obj/structure/closet/secure_closet/ERT6
+	name = "ERT Energy arms locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/weapon/gun/energy/ionrifle/carbine
+		new /obj/item/weapon/gun/energy/ionrifle/carbine
+		new /obj/item/weapon/gun/energy/ionrifle/carbine
+		new /obj/item/weapon/gun/energy/laser/scatter
+		new /obj/item/weapon/gun/energy/laser/scatter
+		new /obj/item/weapon/gun/energy/laser/scatter
+		new /obj/item/weapon/gun/energy/gun/mini
+		new /obj/item/weapon/gun/energy/gun/mini
+		new /obj/item/weapon/gun/energy/gun/mini
+
+
+		/obj/structure/closet/secure_closet/ERT7
+	name = "ERT Close encouters locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/weapon/melee/energy/sword/saber/blue
+		new /obj/item/weapon/melee/energy/sword/saber/blue
+		new /obj/item/weapon/melee/energy/sword/saber/blue
+		new /obj/item/weapon/melee/energy/sword/saber/blue
+		new /obj/item/weapon/melee/energy/sword/saber/blue
+		new /obj/item/weapon/melee/energy/sword/saber/blue
+		new /obj/item/weapon/kitchen/knife/combat
+		new /obj/item/weapon/kitchen/knife/combat
+		new /obj/item/weapon/kitchen/knife/combat
+		new /obj/item/weapon/kitchen/knife/combat
+		new /obj/item/weapon/kitchen/knife/combat
+		new /obj/item/weapon/kitchen/knife/combat
+		new /obj/item/weapon/shield/energy
+		new /obj/item/weapon/shield/energy
+		new /obj/item/weapon/shield/energy
+		new /obj/item/weapon/shield/energy
+		new /obj/item/weapon/shield/energy
+		new /obj/item/weapon/shield/energy
+		new /obj/item/weapon/gun/projectile/shotgun/automatic/combat
+		new /obj/item/weapon/gun/projectile/shotgun/automatic/combat
+		new /obj/item/weapon/gun/projectile/shotgun/automatic/combat
+		new /obj/item/weapon/gun/projectile/shotgun/automatic/combat
+		new /obj/item/weapon/gun/projectile/shotgun/automatic/combat
+		new /obj/item/weapon/gun/projectile/shotgun/automatic/combat
+
+
+	/obj/structure/closet/secure_closet/ERT8
+	name = "ERT Engineering locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/weapon/rcd
+		new /obj/item/weapon/rcd
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/rcd_ammo
+		new /obj/item/weapon/storage/belt/utility/full
+		new /obj/item/weapon/storage/belt/utility/full
+
+
+	/obj/structure/closet/secure_closet/ERT9
+	name = "ERT Medical locker"
+	req_access = list(access_cent_general)
+	icon_state = "ERTsecure1"
+	icon_closed = "ERTsecure"
+	icon_locked = "ERTsecure1"
+	icon_opened = "ERTsecureopen"
+
+	New()
+		..()
+		new /obj/item/weapon/storage/belt/medical/response_team
+		new /obj/item/weapon/storage/belt/medical/response_team
+		new /obj/item/weapon/gun/medbeam
+		new /obj/item/weapon/gun/medbeam
+		new /obj/item/weapon/defibrillator/compact
+		new /obj/item/weapon/defibrillator/compact
+		new /obj/item/weapon/storage/firstaid/toxin
+		new /obj/item/weapon/storage/firstaid/toxin
+		new /obj/item/weapon/storage/firstaid/surgery
+		new /obj/item/weapon/storage/firstaid/surgery
+
+
 /obj/structure/closet/secure_closet/wall
 	name = "wall locker"
 	req_access = list(access_security)
@@ -421,3 +679,5 @@
 				icon_state = icon_closed
 		else
 			icon_state = icon_opened
+
+

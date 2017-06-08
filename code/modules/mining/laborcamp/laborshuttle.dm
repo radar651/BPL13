@@ -7,6 +7,16 @@
 	req_access = list(access_brig)
 
 
+/obj/machinery/computer/shuttle/labor/SecTransport
+	name = "Secuirty Transport shuttle console"
+	desc = "Used to call and send the Secuirty Transport shuttle."
+	circuit = /obj/item/weapon/circuitboard/Sectrans_shuttle
+	shuttleId = "Sectrans"
+	possible_destinations = "Sectrans_home;Sectrans_away"
+	req_access = list(access_brig)
+
+
+
 /obj/machinery/computer/shuttle/labor/one_way
 	name = "prisoner shuttle console"
 	desc = "A one-way shuttle console, used to summon the shuttle to the labor camp."

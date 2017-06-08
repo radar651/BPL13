@@ -54,11 +54,19 @@
 /**********************Shuttle Computer**************************/
 
 /obj/machinery/computer/shuttle/mining
-	name = "Mining Shuttle Console"
-	desc = "Used to call and send the mining shuttle."
+	name = "Mining Tram Console"
+	desc = "Used to call and send the mining tram."
 	circuit = /obj/item/weapon/circuitboard/mining_shuttle
 	shuttleId = "mining"
 	possible_destinations = "mining_home;mining_away"
+
+
+/obj/machinery/computer/shuttle/Cargotransport
+	name = "Cargo Transport Shuttle Console"
+	desc = "Used to call and send the cargo shuttle transport."
+	circuit = /obj/item/weapon/circuitboard/mining_shuttle2
+	shuttleId = "cargotrans"
+	possible_destinations = "cargotransport_home;cargotransport_away"
 
 /******************************Lantern*******************************/
 

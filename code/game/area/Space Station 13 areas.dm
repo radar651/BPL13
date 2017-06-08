@@ -1041,10 +1041,42 @@ var/list/ghostteleportlocs = list()
 	icon_state = "bridge"
 	music = "signal"
 
+/area/bridge/CCES
+	name = "\improper Command Center Engineer Storage"
+	icon_state = "construction"
+
+/area/bridge/CCPR
+	name = "\improper Command Center Press Room"
+	icon_state = "blueold"
+
+area/bridge/CCPanR
+	name = "\improper Command Center Panic Room"
+	icon_state = "blueold"
+
+/area/bridge/ECA
+	name = "\improper Command Center Emergecy Armory"
+	icon_state = "blueold"
+
+/area/bridge/BCO
+	name = "\improper Command Center Backup Commucations Office"
+	icon_state = "bridge"
+	music = "signal"
+
+/area/bridge/BATC
+	name = "\improper Command Center Backup Air Traffic Control Center"
+	icon_state = "bridge"
+	music = "signal"
+
 /area/bridge/meeting_room
 	name = "\improper Heads of Staff Meeting Room"
 	icon_state = "meeting"
 	music = null
+
+/area/bridge/CCER
+	name = "\improper Command Center Emergecy Room"
+	icon_state = "bridge"
+	music = null
+
 
 /area/bridge/command_center_lobby
 	name = "\improper Command Center Lobby"
@@ -1052,11 +1084,11 @@ var/list/ghostteleportlocs = list()
 	music = "signal"
 
 /area/crew_quarters/captain
-	name = "\improper Captain's Office"
+	name = "\improper Overseer's Office"
 	icon_state = "captain"
 
 /area/crew_quarters/captain/bedroom
-	name = "\improper Captain's Bedroom"
+	name = "\improper Overseer's Bedroom"
 	icon_state = "captain"
 
 /area/crew_quarters/recruit
@@ -1064,7 +1096,11 @@ var/list/ghostteleportlocs = list()
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/hop
-	name = "\improper Head of Personnel's Quarters"
+	name = "\improper Colony Resource Director's Office"
+	icon_state = "head_quarters"
+
+	/area/crew_quarters/heads/hop/crdbed
+	name = "\improper Colony Resource Director's Bedroom"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/hor
@@ -1076,11 +1112,11 @@ var/list/ghostteleportlocs = list()
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/hos
-	name = "\improper Head of Security's Quarters"
+	name = "\improper Captain of the Guard's Bedroom"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/cmo
-	name = "\improper Chief Medical Officer's Quarters"
+	name = "\improper Chief Medical Officer's Bedroom"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/courtroom
@@ -1093,6 +1129,10 @@ var/list/ghostteleportlocs = list()
 
 /area/crew_quarters/hor
 	name = "\improper Research Director's Office"
+	icon_state = "head_quarters"
+
+/area/crew_quarters/hor/horbr
+	name = "\improper Research Director's Bedroom"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/hos
@@ -1119,8 +1159,16 @@ var/list/ghostteleportlocs = list()
 	name = "\improper Nanotrasen Representative's Office"
 	icon_state = "bluenew"
 
+/area/ntrep/ntrepbr
+	name = "\improper Nanotrasen Representative's Bedroom"
+	icon_state = "bluenew"
+
 /area/blueshield
 	name = "\improper Blueshield's Office"
+	icon_state = "blueold"
+
+/area/blueshield/bsbr
+	name = "\improper Blueshield's Bedroom"
 	icon_state = "blueold"
 
 /area/centcomdocks

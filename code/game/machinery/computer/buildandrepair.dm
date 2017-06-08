@@ -30,14 +30,14 @@
 	var/frame_desc = null
 	var/contain_parts = 1
 	toolspeed = 1
-	usesound = 'sound/items/Deconstruct.ogg' 
+	usesound = 'sound/items/Deconstruct.ogg'
 
 /obj/item/weapon/circuitboard/computer
-	board_type = "computer"	
-	
+	board_type = "computer"
+
 /obj/item/weapon/circuitboard/machine
-	board_type = "machine"	
-	
+	board_type = "machine"
+
 /obj/item/weapon/circuitboard/message_monitor
 	name = "Circuit board (Message Monitor)"
 	build_path = /obj/machinery/computer/message_monitor
@@ -241,6 +241,9 @@
 /obj/item/weapon/circuitboard/labor_shuttle
 	name = "circuit Board (Labor Shuttle)"
 	build_path = /obj/machinery/computer/shuttle/labor
+/obj/item/weapon/circuitboard/Sectrans_shuttle
+	name = "circuit Board (Secuirty Transport Shuttle)"
+	build_path = /obj/machinery/computer/shuttle/labor/SecTransport
 /obj/item/weapon/circuitboard/labor_shuttle/one_way
 	name = "circuit Board (Prisoner Shuttle Console)"
 	build_path = /obj/machinery/computer/shuttle/labor/one_way
@@ -252,7 +255,9 @@
 	build_path = /obj/machinery/computer/shuttle/ferry/request
 /obj/item/weapon/circuitboard/mining_shuttle
 	name = "circuit Board (Mining Shuttle)"
-	build_path = /obj/machinery/computer/shuttle/mining
+/obj/item/weapon/circuitboard/mining_shuttle2
+	name = "circuit Board (Cargo Transport Shuttle)"
+	build_path = /obj/machinery/computer/shuttle/Cargotransport
 /obj/item/weapon/circuitboard/white_ship
 	name = "circuit Board (White Ship)"
 	build_path = /obj/machinery/computer/shuttle/white_ship
