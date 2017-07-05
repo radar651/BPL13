@@ -5,7 +5,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_medical = 1
-	supervisors = "the captain"
+	supervisors = "the overseer"
 	selection_color = "#ffddf0"
 	req_admin_notify = 1
 	access = list(access_medical, access_morgue, access_genetics, access_heads,
@@ -108,8 +108,8 @@
 	title = "Chemist"
 	flag = CHEMIST
 	department_flag = MEDSCI
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	is_medical = 1
 	supervisors = "the chief medical officer"
 	selection_color = "#ffeef0"
@@ -245,8 +245,8 @@
 	title = "Paramedic"
 	flag = PARAMEDIC
 	department_flag = MEDSCI
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 3
+	spawn_positions = 3
 	is_medical = 1
 	supervisors = "the chief medical officer"
 	selection_color = "#ffeef0"
@@ -276,5 +276,4 @@
 	backpack = /obj/item/weapon/storage/backpack/medic
 	satchel = /obj/item/weapon/storage/backpack/satchel_med
 	dufflebag = /obj/item/weapon/storage/backpack/duffel/medical
-	box = /obj/item/weapon/storage/box/engineer
 

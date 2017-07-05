@@ -21,11 +21,11 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 0)
 
 /datum/job/captain/announce(mob/living/carbon/human/H)
 	. = ..()
-	captain_announcement.Announce("All hands, Captain [H.real_name] on deck!")
+	captain_announcement.Announce("All hands, Overseer [H.real_name] on deck!")
 	callHook("captain_spawned", list("captain" = H))
 
 /datum/outfit/job/captain
-	name = "Captain"
+	name = "The Oversser"
 	jobtype = /datum/job/captain
 
 	uniform = /obj/item/clothing/under/rank/captain
@@ -58,12 +58,12 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 0)
 
 
 /datum/job/hop
-	title = "Head of Personnel"
+	title = "Colony Reserouce Director"
 	flag = HOP
 	department_flag = SUPPORT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the overseer"
 	selection_color = "#ddddff"
 	req_admin_notify = 1
 	is_command = 1
@@ -86,7 +86,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 0)
 	outfit = /datum/outfit/job/hop
 
 /datum/outfit/job/hop
-	name = "Head of Personnel"
+	name = "Colony Reserouce Director"
 	jobtype = /datum/job/hop
 
 	uniform = /obj/item/clothing/under/rank/head_of_personnel

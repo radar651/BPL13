@@ -5,7 +5,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_science = 1
-	supervisors = "the captain"
+	supervisors = "the oversser"
 	selection_color = "#ffddff"
 	req_admin_notify = 1
 	access = list(access_rd, access_heads, access_tox, access_genetics, access_morgue,

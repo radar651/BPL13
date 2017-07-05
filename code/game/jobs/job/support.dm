@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	access = list(access_hydroponics, access_bar, access_kitchen, access_morgue, access_weapons, access_mineral_storeroom)
 	minimal_access = list(access_bar, access_maint_tunnels, access_weapons, access_mineral_storeroom)
@@ -45,7 +45,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	access = list(access_hydroponics, access_bar, access_kitchen, access_morgue)
 	minimal_access = list(access_kitchen, access_maint_tunnels)
@@ -72,7 +72,7 @@
 	total_positions = 3
 	spawn_positions = 2
 	is_service = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	access = list(access_hydroponics, access_bar, access_kitchen, access_morgue)
 	minimal_access = list(access_hydroponics, access_morgue, access_maint_tunnels)
@@ -105,7 +105,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_supply = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mint, access_mining, access_mining_station, access_mineral_storeroom)
 	minimal_access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mint, access_mining, access_mining_station, access_mineral_storeroom)
@@ -195,7 +195,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	access = list(access_clown, access_theatre, access_maint_tunnels)
 	minimal_access = list(access_clown, access_theatre, access_maint_tunnels)
@@ -251,7 +251,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	access = list(access_mime, access_theatre, access_maint_tunnels)
 	minimal_access = list(access_mime, access_theatre, access_maint_tunnels)
@@ -302,7 +302,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	access = list(access_janitor, access_maint_tunnels)
 	minimal_access = list(access_janitor, access_maint_tunnels)
@@ -327,7 +327,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	access = list(access_library, access_maint_tunnels)
 	minimal_access = list(access_library, access_maint_tunnels)
@@ -353,7 +353,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
-	supervisors = "the head of personnel"
+	supervisors = "the colony resource director"
 	selection_color = "#dddddd"
 	alt_titles = list("Hair Stylist","Beautician")
 	access = list(access_maint_tunnels)

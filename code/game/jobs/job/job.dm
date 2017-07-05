@@ -132,7 +132,6 @@
 	var/backpack = /obj/item/weapon/storage/backpack
 	var/satchel = /obj/item/weapon/storage/backpack/satchel_norm
 	var/dufflebag = /obj/item/weapon/storage/backpack/duffel
-	var/box = /obj/item/weapon/storage/box/survival
 
 	var/tmp/list/gear_leftovers = list()
 
@@ -154,9 +153,6 @@
 			else
 				back = backpack //Department backpack
 
-	if(box)
-		backpack_contents.Insert(1, box) // Box always takes a first slot in backpack
-		backpack_contents[box] = 1
 
 	if(allow_loadout && H.client && (H.client.prefs.gear && H.client.prefs.gear.len))
 		for(var/gear in H.client.prefs.gear)

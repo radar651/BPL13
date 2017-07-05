@@ -41,7 +41,6 @@
 	backpack = /obj/item/weapon/storage/backpack/industrial
 	satchel = /obj/item/weapon/storage/backpack/satchel_eng
 	dufflebag = /obj/item/weapon/storage/backpack/duffel/engineering
-	box = /obj/item/weapon/storage/box/engineer
 
 
 /datum/job/engineer
@@ -77,8 +76,6 @@
 	backpack = /obj/item/weapon/storage/backpack/industrial
 	satchel = /obj/item/weapon/storage/backpack/satchel_eng
 	dufflebag = /obj/item/weapon/storage/backpack/duffel/engineering
-	box = /obj/item/weapon/storage/box/engineer
-
 
 
 /datum/job/atmos
@@ -108,39 +105,3 @@
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	id = /obj/item/weapon/card/id/engineering
 	pda = /obj/item/device/pda/atmos
-
-	box = /obj/item/weapon/storage/box/engineer
-
-/datum/job/mechanic
-	title = "Mechanic"
-	flag = MECHANIC
-	department_flag = KARMA
-	total_positions = 1
-	spawn_positions = 1
-	is_engineering = 1
-	supervisors = "the chief engineer"
-	selection_color = "#fff5cc"
-	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_mechanic, access_external_airlocks, access_mineral_storeroom)
-	minimal_access = list(access_maint_tunnels, access_emergency_storage, access_mechanic, access_external_airlocks, access_mineral_storeroom)
-	outfit = /datum/outfit/job/mechanic
-
-/datum/outfit/job/mechanic
-	name = "Mechanic"
-	jobtype = /datum/job/mechanic
-
-	uniform = /obj/item/clothing/under/rank/mechanic
-	belt = /obj/item/weapon/storage/belt/utility/full
-	shoes = /obj/item/clothing/shoes/workboots
-	head = /obj/item/clothing/head/hardhat
-	l_ear = /obj/item/device/radio/headset/headset_eng
-	id = /obj/item/weapon/card/id/engineering
-	r_pocket = /obj/item/device/t_scanner
-	pda = /obj/item/device/pda/engineering
-	backpack_contents = list(
-		/obj/item/weapon/pod_paint_bucket = 1
-	)
-
-	backpack = /obj/item/weapon/storage/backpack/industrial
-	satchel = /obj/item/weapon/storage/backpack/satchel_eng
-	dufflebag = /obj/item/weapon/storage/backpack/duffel/engineering
-	box = /obj/item/weapon/storage/box/engineer

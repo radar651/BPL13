@@ -67,10 +67,22 @@
 	icon_state = "roboticsf"
 	item_color = "roboticsf"
 	flags_size = null
+	
+/obj/item/clothing/under/rank/colonyfire
+	desc = "It's a jumpsuit worn by Colony fire fighters."
+	name = "Colony Fire Fighter Jumpsuit"
+	icon_state = "firefighter"
+	item_state = "firefighter"
+	item_color = "atmos"
+	flags_size = ONESIZEFITSALL
+	burn_state = FIRE_PROOF
+	
+/obj/item/clothing/under/rank/cheiffirefighter
+	desc = "It's a jumpsuit worn by Cheif Colony fire fighters."
+	name = "Cheif Colony Fire Fighter Jumpsuit"
+	icon_state = "cheiffirefighter"
+	item_state = "cheiffirefighter"
+	item_color = "atmos"
+	flags_size = ONESIZEFITSALL
+	burn_state = FIRE_PROOF
 
-/obj/item/clothing/under/rank/mechanic
-	desc = "It's a pair of overalls worn by mechanics."
-	name = "mechanic's overalls"
-	icon_state = "mechanic"
-	item_state = "mechanic"
-	item_color = "mechanic"

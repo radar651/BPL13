@@ -25,6 +25,8 @@ var/const/VIROLOGIST		=(1<<6)
 var/const/PSYCHIATRIST		=(1<<7)
 var/const/ROBOTICIST		=(1<<8)
 var/const/PARAMEDIC			=(1<<9)
+var/const/COLFIRE			=(1<<10)
+var/const/COLFIRECHEIF		=(1<<11)
 
 
 var/const/SUPPORT			=(1<<2)
@@ -50,19 +52,17 @@ var/const/KARMA				=(1<<3)
 var/const/NANO				=(1<<0)
 var/const/BLUESHIELD		=(1<<1)
 var/const/BARBER			=(1<<3)
-var/const/MECHANIC			=(1<<4)
 var/const/BRIGDOC			=(1<<5)
 var/const/JUDGE				=(1<<6)
-var/const/PILOT				=(1<<7)
 
 var/list/assistant_occupations = list(
 )
 
 
 var/list/command_positions = list(
-	"Captain",
-	"Head of Personnel",
-	"Head of Security",
+	"The Overseer",
+	"Colony Resource director",
+	"Captain of the Guard",
 	"Chief Engineer",
 	"Research Director",
 	"Chief Medical Officer"
@@ -73,7 +73,6 @@ var/list/engineering_positions = list(
 	"Chief Engineer",
 	"Station Engineer",
 	"Life Support Specialist",
-	"Mechanic"
 )
 
 
@@ -132,7 +131,6 @@ var/list/security_positions = list(
 	"Detective",
 	"Security Officer",
 	"Brig Physician",
-	"Security Pod Pilot"
 )
 
 
@@ -151,10 +149,8 @@ var/list/whitelisted_positions = list(
 	"Blueshield",
 	"Nanotrasen Representative",
 	"Barber",
-	"Mechanic",
 	"Brig Physician",
-	"Magistrate",
-	"Security Pod Pilot",
+	"Magistrate",,
 )
 
 

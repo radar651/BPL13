@@ -1,14 +1,14 @@
 /datum/job/civilian
-	title = "Civilian"
+	title = "Prisoner"
 	flag = CIVILIAN
 	department_flag = SUPPORT
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = "the head of personnel"
+	supervisors = "Security"
 	selection_color = "#dddddd"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	alt_titles = list("Tourist","Businessman","Trader","Assistant")
+	alt_titles = list("Convict","Lifer")
 	outfit = /datum/outfit/job/assistant
 
 /datum/job/civilian/get_access()
@@ -18,7 +18,7 @@
 		return list()
 
 /datum/outfit/job/assistant
-	name = "Civilian"
+	name = "Prisoner"
 	jobtype = /datum/job/civilian
 
 	uniform = /obj/item/clothing/under/color/random

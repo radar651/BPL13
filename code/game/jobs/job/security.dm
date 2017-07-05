@@ -22,7 +22,7 @@
 	outfit = /datum/outfit/job/hos
 
 /datum/outfit/job/hos
-	name = "Head of Security"
+	name = "Captain of the Guard"
 	jobtype = /datum/job/hos
 
 	uniform = /obj/item/clothing/under/rank/head_of_security
@@ -55,7 +55,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_security = 1
-	supervisors = "the head of security"
+	supervisors = "the captain of the guard"
 	selection_color = "#ffeeee"
 	access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_morgue, access_weapons)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_weapons)
@@ -98,7 +98,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_security = 1
-	supervisors = "the head of security"
+	supervisors = "the captain of the guard"
 	selection_color = "#ffeeee"
 	alt_titles = list("Forensic Technician")
 	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_court, access_weapons)
@@ -153,10 +153,10 @@
 	title = "Security Officer"
 	flag = OFFICER
 	department_flag = ENGSEC
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 10
+	spawn_positions = 10
 	is_security = 1
-	supervisors = "the head of security"
+	supervisors = "the captain of the guard"
 	selection_color = "#ffeeee"
 	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue, access_weapons)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_weapons)
@@ -195,10 +195,10 @@
 	title = "Brig Physician"
 	flag = BRIGDOC
 	department_flag = KARMA
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	is_security = 1
-	supervisors = "the head of security"
+	supervisors = "the captain of the guard"
 	selection_color = "#ffeeee"
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_morgue, access_surgery, access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels)
@@ -223,43 +223,3 @@
 	backpack = /obj/item/weapon/storage/backpack/medic
 	satchel = /obj/item/weapon/storage/backpack/satchel_med
 	dufflebag = /obj/item/weapon/storage/backpack/duffel/medical
-
-
-
-/datum/job/pilot
-	title = "Security Pod Pilot"
-	flag = PILOT
-	department_flag = KARMA
-	total_positions = 1
-	spawn_positions = 1
-	is_security = 1
-	supervisors = "the head of security"
-	selection_color = "#ffeeee"
-	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue, access_weapons, access_pilot, access_external_airlocks)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_weapons, access_pilot, access_external_airlocks)
-	minimal_player_age = 7
-	outfit = /datum/outfit/job/pilot
-
-/datum/outfit/job/pilot
-	name = "Security Pod Pilot"
-	jobtype = /datum/job/pilot
-
-	uniform = /obj/item/clothing/under/rank/security/pod_pilot
-	suit = /obj/item/clothing/suit/jacket/pilot
-	gloves = /obj/item/clothing/gloves/color/black
-	shoes = /obj/item/clothing/shoes/jackboots
-	l_ear = /obj/item/device/radio/headset/headset_sec/alt
-	id = /obj/item/weapon/card/id/security
-	l_pocket = /obj/item/device/flash
-	suit_store = /obj/item/weapon/gun/energy/gun/advtaser
-	pda = /obj/item/device/pda/security
-	backpack_contents = list(
-		/obj/item/weapon/restraints/handcuffs = 1
-	)
-
-	implants = list(/obj/item/weapon/implant/mindshield)
-
-	backpack = /obj/item/weapon/storage/backpack/security
-	satchel = /obj/item/weapon/storage/backpack/satchel_sec
-	dufflebag = /obj/item/weapon/storage/backpack/duffel/security
-	box = /obj/item/weapon/storage/box/engineer
