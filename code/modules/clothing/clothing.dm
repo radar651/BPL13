@@ -293,6 +293,7 @@ BLIND     // can't see anything
 	slot_flags = SLOT_MASK
 	var/mask_adjusted = 0
 	var/adjusted_flags = null
+	var/HUDType = null
 	strip_delay = 40
 	put_on_delay = 40
 

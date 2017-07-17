@@ -67,6 +67,11 @@
 	else
 		new /obj/item/stack/cable_coil(src, 30, pickedcolor)
 
+/obj/item/weapon/storage/toolbox/electrical/rusted
+	name = "Rusted electrical toolbox"
+	desc = "A Rusted eletrical tool box. Seems to have been here for a while. Its rusted shut."
+	icon_state = "rustedyellow"
+
 /obj/item/weapon/storage/toolbox/syndicate
 	name = "suspicious looking toolbox"
 	icon_state = "syndicate"
@@ -85,7 +90,7 @@
 	new /obj/item/weapon/wirecutters(src, "red")
 	new /obj/item/device/multitool(src)
 	new /obj/item/clothing/gloves/combat(src)
-	
+
 /obj/item/weapon/storage/toolbox/drone
 	name = "mechanical toolbox"
 	icon_state = "blue"

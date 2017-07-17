@@ -29,6 +29,15 @@
 	item_state = "militaryjacket"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
+/obj/item/clothing/suit/armor/vest/ranger
+	name = "Ranger Armor"
+	desc = "A chest peice of riot rarmor with a heavy duster. Its used by Secuirty Rangers and offers more melee protection but lacks the full protection of a riot suit."
+	icon_state = "ranger"
+	item_state = "ranger"
+	armor = list(melee = 25, bullet = 10, laser = 15, energy = 5, bomb = 5, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+
+
 /obj/item/clothing/suit/armor/vest/combat
 	name = "combat vest"
 	desc = "An armored vest that protects against some damage."

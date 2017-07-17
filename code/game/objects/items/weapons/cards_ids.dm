@@ -526,8 +526,8 @@
 	access = list(access_syndicate, access_external_airlocks)
 
 /obj/item/weapon/card/id/captains_spare
-	name = "captain's spare ID"
-	desc = "The spare ID of the captain."
+	name = "Oversser's spare ID"
+	desc = "The spare ID of the Oversser."
 	icon_state = "gold"
 	item_state = "gold_id"
 	registered_name = "Captain"

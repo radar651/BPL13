@@ -71,3 +71,5 @@
 			if(WEST)
 				turret.pixel_x = 12
 				turret.pixel_y = 4
+
+

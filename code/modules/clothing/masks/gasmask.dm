@@ -218,6 +218,7 @@
 	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/selectphrase)
 
 
+
 /obj/item/clothing/mask/gas/sechailer/swat
 	name = "\improper SWAT mask"
 	desc = "A close-fitting tactical mask with an especially aggressive Compli-o-nator 3000."
@@ -225,6 +226,8 @@
 	aggressiveness = 3
 	phrase = 12
 	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/selectphrase)
+
+
 
 /obj/item/clothing/mask/gas/sechailer/blue
 	name = "\improper blue SWAT mask"
@@ -241,6 +244,20 @@
 	icon = 'icons/obj/device.dmi'
 	icon_state = "taperecorder_idle"
 	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/selectphrase)
+
+	/obj/item/clothing/mask/gas/sechailer/ranger
+	name = "\improper Ranger SWAT mask"
+	desc = "A close-fitting tactical mask with an especially aggressive Compli-o-nator 3000. This by for the Ranger unit. The lenses seem to have a HUD in them."
+	icon_state = "officermask"
+	item_state = "officermask"
+	aggressiveness = 3
+	phrase = 12
+	actions_types = list(/datum/action/item_action/halt, /datum/action/item_action/selectphrase)
+	global/var/list/jobs[0]
+	flash_protect = 1
+	HUDType = DATA_HUD_SECURITY_ADVANCED
+
+
 
 /obj/item/clothing/mask/gas/sechailer/ui_action_click(mob/user, actiontype)
 	if(actiontype == /datum/action/item_action/halt)

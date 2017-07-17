@@ -28,17 +28,17 @@
 	item_color = "cargo"
 
 /obj/item/weapon/stamp/captain
-	name = "captain's rubber stamp"
+	name = "Overseers's rubber stamp"
 	icon_state = "stamp-cap"
 	item_color = "captain"
 
 /obj/item/weapon/stamp/hop
-	name = "head of personnel's rubber stamp"
+	name = "Colony Resource Directors's rubber stamp"
 	icon_state = "stamp-hop"
 	item_color = "hop"
 
 /obj/item/weapon/stamp/hos
-	name = "head of security's rubber stamp"
+	name = "Captain of the Guard's rubber stamp"
 	icon_state = "stamp-hos"
 	item_color = "hosred"
 

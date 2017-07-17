@@ -107,8 +107,8 @@ var/global/list/captain_display_cases = list()
 	var/obj/item/weapon/airlock_electronics/circuit
 
 /obj/structure/displaycase/captains_laser
-	name = "captain's display case"
-	desc = "A display case for the captain's antique laser gun. Hooked up with an anti-theft system."
+	name = "Overseer's display case"
+	desc = "A display case for the Overseers's antique laser gun. Hooked up with an anti-theft system."
 	burglar_alarm = 1
 
 /obj/structure/displaycase/captains_laser/New()

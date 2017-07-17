@@ -244,6 +244,14 @@ var/list/ghostteleportlocs = list()
 	music = "music/escape.ogg"
 	icon_state = "shuttle"
 
+/area/shuttle/cargo
+	icon_state = "shuttle"
+	name = "\improper Cargo Shuttle"
+
+/area/shuttle/sectrans
+	icon_state = "shuttle"
+	name = "\improper Secuirty Transport Shuttle"
+
 /area/shuttle/transport
 	icon_state = "shuttle"
 	name = "\improper Transport Shuttle"
@@ -1041,6 +1049,31 @@ var/list/ghostteleportlocs = list()
 	icon_state = "bridge"
 	music = "signal"
 
+/area/bridge/CCG
+	name = "\improper Command Center Garage"
+	icon_state = "bridge"
+
+/area/bridge/NWhall
+	name = "\improper North West Hall"
+	icon_state = "bridge"
+
+/area/bridge/NEhall
+	name = "\improper North East Hall"
+	icon_state = "bridge"
+
+/area/bridge/Nhall
+	name = "\improper North Hall"
+	icon_state = "bridge"
+
+/area/bridge/Ehall
+	name = "\improper East Hall"
+	icon_state = "bridge"
+
+/area/bridge/Whall
+	name = "\improper West Hall"
+	icon_state = "bridge"
+
+
 /area/bridge/CCES
 	name = "\improper Command Center Engineer Storage"
 	icon_state = "construction"
@@ -1059,6 +1092,11 @@ area/bridge/CCPanR
 
 /area/bridge/BCO
 	name = "\improper Command Center Backup Commucations Office"
+	icon_state = "bridge"
+	music = "signal"
+
+/area/bridge/BPCO
+	name = "\improper Command Center Primary Commucations Office"
 	icon_state = "bridge"
 	music = "signal"
 
@@ -1201,6 +1239,10 @@ area/bridge/CCPanR
 	name = "\improper Dormitory Toilets"
 	icon_state = "toilet"
 
+/area/crew_quarters/toilet/CCtoilet
+	name = "\improper Command Center Toilets"
+	icon_state = "toilet"
+
 /area/crew_quarters/sleep
 	name = "\improper Dormitories"
 	icon_state = "Sleep"
@@ -1239,6 +1281,18 @@ area/bridge/CCPanR
 
 /area/crew_quarters/kitchen
 	name = "\improper Kitchen"
+	icon_state = "kitchen"
+
+/area/crew_quarters/kitchen/messkitch
+	name = "\improper Mess hall Kitchen"
+	icon_state = "kitchen"
+
+/area/crew_quarters/kitchen/messkitchfrez
+	name = "\improper Mess hall Kitchen Freezer"
+	icon_state = "kitchen"
+
+/area/crew_quarters/kitchen/mess
+	name = "\improper Mess hall"
 	icon_state = "kitchen"
 
 /area/crew_quarters/bar
@@ -1405,6 +1459,14 @@ area/bridge/CCPanR
 /area/engine/engineering
 	name = "Engineering"
 	icon_state = "engine_smes"
+
+/area/engine/engineering/sesubstation
+	name = "South East Substation"
+	icon_state = "engine_smes"
+
+/area/engine/engineering/foremanoffice
+	name = "Foreman's office"
+	icon_state = "engine"
 
 /area/engine/break_room
 	name = "\improper Engineering Foyer"
@@ -1691,6 +1753,30 @@ area/bridge/CCPanR
 
 //Security
 
+/area/security/secposta
+	name = "\improper Security Post Alpha"
+	icon_state = "securityoffice"
+
+/area/security/secrposta
+	name = "\improper Security Ranger Post Alpha"
+	icon_state = "securityoffice"
+
+/area/security/shuttlebaylobby
+	name = "\improper Security Bay Lobby"
+	icon_state = "securityoffice"
+
+/area/security/shuttlelobby
+	name = "\improper Shuttle Lobby"
+	icon_state = "securityoffice"
+
+/area/security/secpostb
+	name = "\improper Security Post Bravo"
+	icon_state = "securityoffice"
+
+/area/security/ATC
+	name = "\improper Primary Air Traffice Control"
+	icon_state = "securityoffice"
+
 /area/security/main
 	name = "\improper Security Office"
 	icon_state = "securityoffice"
@@ -1935,6 +2021,10 @@ area/security/podbay
 
 /area/janitor/
 	name = "\improper Custodial Closet"
+	icon_state = "janitor"
+
+/area/janitor/njc
+	name = "\improper Northern Janitorial Closet"
 	icon_state = "janitor"
 
 /area/hydroponics

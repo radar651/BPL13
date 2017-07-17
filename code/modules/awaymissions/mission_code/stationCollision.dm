@@ -141,7 +141,7 @@ var/sc_safecode5 = "[rand(0,9)]"
  * Captain's safe
  */
 /obj/item/weapon/storage/secure/safe/sc_ssafe
-	name = "Captain's secure safe"
+	name = "Overseer's secure safe"
 
 /obj/item/weapon/storage/secure/safe/sc_ssafe/New()
 	..()

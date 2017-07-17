@@ -53,7 +53,7 @@
 
 	New()
 		..()
-		for(var/i in 1 to 4)
+		for(var/i in 1 to 8)
 			new /obj/item/weapon/reagent_containers/food/snacks/meat/monkey(src)
 
 
@@ -70,10 +70,10 @@
 
 	New()
 		..()
-		for(var/i in 1 to 5)
+		for(var/i in 1 to 10)
 			new /obj/item/weapon/reagent_containers/food/condiment/milk(src)
 			new /obj/item/weapon/reagent_containers/food/condiment/soymilk(src)
-		for(var/i in 1 to 2)
+		for(var/i in 1 to 5)
 			new /obj/item/weapon/storage/fancy/egg_box(src)
 
 

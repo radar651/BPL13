@@ -34,6 +34,13 @@
 	playsound(loc, 'sound/weapons/genhit.ogg', 50, 1, -1)
 	return (BRUTELOSS)
 
+/obj/item/weapon/wrench/broken
+	name = "Broken wrench"
+	desc = "A wrench with common uses. No good now. Still a good wepaon in a pinch."
+	icon = 'icons/obj/tools.dmi'
+	icon_state = "wrenchbroke"
+	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
+
 /obj/item/weapon/wrench/cyborg
 	name = "automatic wrench"
 	desc = "An advanced robotic wrench. Can be found in construction cyborgs."
@@ -163,6 +170,7 @@
 		M = user
 	return eyestab(M,user)
 
+
 /obj/item/weapon/screwdriver/brass
 	name = "brass screwdriver"
 	desc = "A screwdriver made of brass. The handle feels freezing cold."
@@ -210,6 +218,45 @@
 	usesound = 'sound/items/drill_use.ogg'
 	toolspeed = 0.5
 
+
+/obj/item/weapon/screwdriver/broken1
+	name = "Broken screwdriver"
+	desc = "A common tool used for dealing with screws. Can't tell if it was a flat head or a phillips anymore."
+	icon_state = "redbroke"
+
+
+/obj/item/weapon/screwdriver/broken2
+	name = "Broken screwdriver"
+	desc = "A common tool used for dealing with screws. Can't tell if it was a flat head or a phillips anymore."
+	icon_state = "bluebroke"
+
+
+/obj/item/weapon/screwdriver/broken3
+	name = "Broken screwdriver"
+	desc = "A common tool used for dealing with screws. Can't tell if it was a flat head or a phillips anymore."
+	icon_state = "pinkbroke"
+
+/obj/item/weapon/screwdriver/broken4
+	name = "Broken screwdriver"
+	desc = "A common tool used for dealing with screws. Can't tell if it was a flat head or a phillips anymore."
+	icon_state = "brownbroke"
+
+/obj/item/weapon/screwdriver/broken5
+	name = "Broken screwdriver"
+	desc = "A common tool used for dealing with screws. Can't tell if it was a flat head or a phillips anymore."
+	icon_state = "greenbroke"
+
+/obj/item/weapon/screwdriver/broken6
+	name = "Broken screwdriver"
+	desc = "A common tool used for dealing with screws. Can't tell if it was a flat head or a phillips anymore."
+	icon_state = "cyanbroke"
+
+
+/obj/item/weapon/screwdriver/broken7
+	name = "Broken screwdriver"
+	desc = "A common tool used for dealing with screws. Can't tell if it was a flat head or a phillips anymore."
+	icon_state = "yellowbroke"
+
 //Wirecutters
 /obj/item/weapon/wirecutters
 	name = "wirecutters"
@@ -254,6 +301,12 @@
 	user.visible_message("<span class='suicide'>[user] is cutting at their arteries with [src]! It looks like they're trying to commit suicide!</span>")
 	playsound(loc, usesound, 50, 1, -1)
 	return (BRUTELOSS)
+
+/obj/item/weapon/wirecutters/broke
+	name = "broken cutters"
+	desc = "This use cuts wires. Now they only cut the dreams of Greytide."
+	icon_state = "redbroke"
+
 
 /obj/item/weapon/wirecutters/brass
 	name = "brass wirecutters"
@@ -630,6 +683,14 @@ obj/item/weapon/weldingtool/experimental/process()
 		nextrefueltick = world.time + 10
 		reagents.add_reagent("fuel", 1)
 
+/obj/item/weapon/weldingtool/broken
+	name = "Broken welding tool"
+	desc = "A standard edition welder provided by Nanotrasen. The nozzle, trigger and fuel line appear to be mizzing. Aside from a blunt object, its usless as a tool"
+	icon = 'icons/obj/tools.dmi'
+	icon_state = "welderbroke"
+	item_state = "welderbroke"
+	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
+
 //Crowbar
 /obj/item/weapon/crowbar
 	name = "pocket crowbar"
@@ -712,6 +773,24 @@ obj/item/weapon/weldingtool/experimental/process()
 	to_chat(user, "<span class='notice'>You attach the cutting jaws to [src].</span>")
 	qdel(src)
 	user.put_in_active_hand(cutjaws)
+
+/obj/item/weapon/crowbar/broken
+	name = "broken pocket crowbar"
+	desc = "A small crowbar. Its prying ends are broken off. Looks like they snapped. Still make a good weapon in a pinch."
+	icon = 'icons/obj/tools.dmi'
+	icon_state = "crowbarbroken"
+	item_state = "crowbarbroken"
+	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
+
+/obj/item/weapon/crowbar/red/broken
+	name = "broken pocket crowbar"
+	desc = "A small red crowbar. Its prying ends are broken off. Looks like they snapped. Still make a good weapon in a pinch."
+	icon = 'icons/obj/tools.dmi'
+	icon_state = "crowbar_redbroken"
+	item_state = "crowbar_redbroken"
+	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
+
+
 
 // Conversion kit
 /obj/item/weapon/conversion_kit

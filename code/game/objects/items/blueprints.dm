@@ -312,3 +312,11 @@
 	name = "station schematics"
 	desc = "A digital copy of the station blueprints stored in your memory."
 	fluffnotice = "Intellectual Property of Nanotrasen. For use in engineering cyborgs only. Wipe from memory upon departure from the station."
+
+
+/obj/item/areaeditor/asylum
+	name = "Asylum Blueprints"
+	desc = "Blue prints for the Insane Asylum. They appear to be dusty and fadded. Seems they been here a while."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "blueprints"
+	attack_verb = list("attacked", "bapped", "hit")

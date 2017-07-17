@@ -10,3 +10,14 @@
 /obj/item/key/security
 	desc = "A keyring with a small steel key, and a rubber stun baton accessory."
 	icon_state = "keysec"
+
+
+
+/obj/item/key/security/sec2
+	desc = "A keyring with a small steel key, and a piece of red rubber, signafing it belongs to the rangers."
+	icon_state = "keysec2"
+
+
+/obj/item/key/security/com
+	desc = "A keyring with a small steel key, and a piece of a yellow C stamped on blued steel, signafing it belongs to the Command Team."
+	icon_state = "keycom"

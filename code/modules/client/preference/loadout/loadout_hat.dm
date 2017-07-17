@@ -45,17 +45,17 @@
 /datum/gear/hat/beretsec
 	display_name = "security beret"
 	path = /obj/item/clothing/head/beret/sec
-	allowed_roles = list("Head of Security", "Warden", "Security Officer", "Security Pod Pilot")
+	allowed_roles = list("Head of Security", "Warden", "Security Officer")
 
 /datum/gear/hat/capcsec
 	display_name = "security corporate cap"
 	path = /obj/item/clothing/head/soft/sec/corp
-	allowed_roles = list("Head of Security", "Warden", "Security Officer", "Security Pod Pilot")
+	allowed_roles = list("Head of Security", "Warden", "Security Officer")
 
 /datum/gear/hat/capsec
 	display_name = "security cap"
 	path = /obj/item/clothing/head/soft/sec
-	allowed_roles = list("Head of Security", "Warden", "Security Officer", "Security Pod Pilot")
+	allowed_roles = list("Head of Security", "Warden", "Security Officer")
 
 /datum/gear/hat/capred
 	display_name = "cap, red"

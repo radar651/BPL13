@@ -211,23 +211,23 @@
 	desc = "This is a highly valuable statue made from gold."
 
 /obj/structure/statue/gold/hos
-	name = "statue of the head of security"
+	name = "Statue of the Captain of the Guard"
 	icon_state = "hos"
 
 /obj/structure/statue/gold/hop
-	name = "statue of the head of personnel"
+	name = "Statue of the Colony Resource Director"
 	icon_state = "hop"
 
 /obj/structure/statue/gold/cmo
-	name = "statue of the chief medical officer"
+	name = "Statue of the Chief Medical Officer"
 	icon_state = "cmo"
 
 /obj/structure/statue/gold/ce
-	name = "statue of the chief engineer"
+	name = "Statue of the Chief Engineer"
 	icon_state = "ce"
 
 /obj/structure/statue/gold/rd
-	name = "statue of the research director"
+	name = "Statue of the Research Director"
 	icon_state = "rd"
 
 /obj/structure/statue/silver
@@ -261,7 +261,7 @@
 	desc = "This is a very expensive diamond statue"
 
 /obj/structure/statue/diamond/captain
-	name = "statue of THE captain."
+	name = "statue of THE Overseer."
 	icon_state = "cap"
 
 /obj/structure/statue/diamond/ai1

@@ -191,6 +191,35 @@
 		new /obj/item/weapon/melee/baton/loaded(src)
 		new /obj/item/taperoll/police(src)
 
+
+/obj/structure/closet/secure_closet/security/ranger
+	name = "security ranger's locker"
+	req_access = list(access_security)
+	icon_state = "sec1"
+	icon_closed = "sec"
+	icon_locked = "sec1"
+	icon_opened = "secopen"
+	icon_broken = "secbroken"
+	icon_off = "secoff"
+
+	New()
+		..()
+		new /obj/item/key/security/sec2(src)
+		new /obj/item/weapon/storage/backpack/satchel_sec(src)
+		new /obj/item/clothing/suit/armor/vest/ranger(src)
+		new /obj/item/device/radio/headset/headset_sec/alt(src)
+		new /obj/item/weapon/reagent_containers/spray/pepper(src)
+		new /obj/item/device/flash(src)
+		new /obj/item/weapon/grenade/flashbang(src)
+		new /obj/item/weapon/storage/belt/security/sec(src)
+		new /obj/item/clothing/mask/gas/sechailer/ranger(src)
+		new /obj/item/clothing/head/helmet(src)
+		new /obj/item/weapon/melee/baton/loaded(src)
+		new /obj/item/taperoll/police(src)
+		new /obj/item/weapon/gun/projectile/automatic/pistol/enforcer45(src)
+		new /obj/item/weapon/gun/projectile/automatic/pistol/enforcer45(src)
+
+
 /obj/structure/closet/secure_closet/brigdoc
 	name = "brig physician's locker"
 	req_access = list(access_security)
