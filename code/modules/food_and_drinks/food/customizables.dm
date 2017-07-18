@@ -471,3 +471,124 @@
 				sorted[it] = i
 	return sorted
 
+
+
+
+
+	// Customizable Drinks /////////////////////////////////////////
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable
+	volume = 100
+	var/gulp_size = 2
+	var/list/ingredients = list()
+	var/initReagent
+	var/ingMax = 3
+	var/image/filling
+	isGlass = 1
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/New()
+	. = ..()
+	src.reagents.add_reagent(src.initReagent,50)
+	var/icon/opaquefilling = new(icon,"[initial(icon_state)]_filling")
+	opaquefilling.ChangeOpacity(0.8)
+	filling = image(opaquefilling)
+	return
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/attackby(obj/item/I,mob/user)
+	if(istype(I,/obj/item/weapon/pen))
+		var/n_name = copytext(sanitize(input(user, "What would you like to name this drink?", "Booze Renaming", null) as text|null), 1, MAX_NAME_LEN*3)
+		if(n_name && Adjacent(user) && !user.stat)
+			name = "[n_name]"
+		return
+	else if(istype(I,/obj/item/weapon/reagent_containers/food/snacks))
+		if(src.ingredients.len < src.ingMax)
+			var/obj/item/weapon/reagent_containers/food/snacks/S = I
+
+			if(!recursiveFood && istype(I, /obj/item/weapon/reagent_containers/food/snacks/customizable))
+				to_chat(user, "<span class='warning'>[pick("Sorry, no recursive food.","That would be a straining topological exercise.","This world just isn't ready for your cooking genius.","It's possible that you may have a problem.","It won't fit.","You don't think that would taste very good.","Quit goofin' around.")]</span>")
+				return
+			if(user.drop_item(I, src))
+				to_chat(user, "<span class='notice'>You add the [S.name] to the [src.name].</span>")
+				S.reagents.trans_to(src,S.reagents.total_volume)
+				src.ingredients += S
+				src.updateName()
+				src.overlays -= src.filling //we can't directly modify the overlay, so we have to remove it and then add it again
+				var/newcolor = S.filling_color != "#FFFFFF" ? S.filling_color : AverageColor(getFlatIcon(S, S.dir, 0), 1, 1)
+				src.filling.color = BlendRGB(src.filling.color, newcolor, 1/src.ingredients.len)
+				src.overlays += src.filling
+		else
+			to_chat(user, "<span class='warning'>That won't fit.</span>")
+	else
+		. = ..()
+	return
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/proc/updateName() //copypaste of food's updateName()
+	var/i = 1
+	var/new_name
+	for(var/obj/item/weapon/reagent_containers/food/snacks/S in src.ingredients)
+		if(i == 1)
+			new_name += "[S.name]"
+		else if(i == src.ingredients.len)
+			new_name += " and [S.name]"
+		else
+			new_name += ", [S.name]"
+		i++
+	new_name = "[new_name] [initial(src.name)]"
+	if(length(new_name) >= 150)
+		src.name = "something yummy"
+	else
+		src.name = new_name
+	return new_name
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/proc/generateFilling(var/obj/item/weapon/reagent_containers/food/snacks/S)
+	src.overlays.len = 0
+	var/image/I = filling
+	if(S.filling_color != "#FFFFFF")
+		I.color = S.filling_color
+	else
+		I.color = AverageColor(getFlatIcon(S, S.dir, 0), 1, 1)
+	return I
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/Destroy()
+	for(. in src.ingredients) qdel(.)
+	return ..()
+
+// Drink Subtypes //////////////////////////////////////////////
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/wine
+	name = "wine"
+	desc = "Classy."
+	icon_state = "winecustom"
+	initReagent = "wine"
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/whiskey
+	name = "whiskey"
+	desc = "A bottle of quite-a-bit-proof whiskey."
+	icon_state = "whiskeycustom"
+	initReagent = "whiskey"
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/vermouth
+	name = "vermouth"
+	desc = "Shaken, not stirred."
+	icon_state = "vermouthcustom"
+	initReagent = "vermouth"
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/vodka
+	name = "vodka"
+	desc = "Get drunk, comrade."
+	icon_state = "vodkacustom"
+	initReagent = "vodka"
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/ale
+	name = "ale"
+	desc = "Strike the asteroid!"
+	icon_state = "alecustom"
+	initReagent = "ale"
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/customizable/degreaser
+	name = "engine degreaser"
+	desc = "Engines, full speed!"
+	icon_state = "degreasercustom"
+	initReagent = "ethanol"
+
+

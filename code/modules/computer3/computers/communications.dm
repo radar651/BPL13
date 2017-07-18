@@ -28,7 +28,7 @@
 	req_access = list(access_heads)
 
 	var/prints_intercept = 1
-	var/authenticated = 0
+	var/authenticated = 1
 	var/list/messagetitle = list()
 	var/list/messagetext = list()
 	var/currmsg = 0

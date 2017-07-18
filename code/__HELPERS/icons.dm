@@ -884,9 +884,50 @@ proc/sort_atoms_by_layer(var/list/atoms)
 		icon = J
 		return J
 	return 0
-	
+
 //Hook, override to run code on- wait this is images
 //Images have dir without being an atom, so they get their own definition.
 //Lame.
 /image/proc/setDir(newdir)
 	dir = newdir
+
+
+/proc/ListColors(var/icon/I, var/ignoreGreyscale = 0)
+	var/list/colors = list()
+	for(var/x_pixel = 1 to I.Width())
+		for(var/y_pixel = 1 to I.Height())
+			var/this_color = I.GetPixel(x_pixel, y_pixel)
+			if(this_color)
+				if (ignoreGreyscale && ReadHSV(RGBtoHSV(this_color))[2] == 0) //If saturation is 0, must be greyscale
+					continue
+				colors.Add(this_color)
+	return colors
+
+
+/proc/AverageColor(var/icon/I, var/accurate = 0, var/ignoreGreyscale = 0)
+//Accurate: Use more accurate color averaging, usually has better results and prevents muddied or overly dark colors. Mad thanks to wwjnc.
+//ignoreGreyscale: Excempts greyscale colors from the color list, useful for filtering outlines or plate overlays.
+	var/list/colors = ListColors(I, ignoreGreyscale)
+	if(!colors.len)
+		return null
+
+	var/list/colorsum = list(0, 0, 0) //Holds the sum of the RGB values to calculate the average
+	var/list/RGB = list(0, 0, 0) //Temp list for each color
+	var/total = colors.len
+
+	var/final_average
+	if (accurate) //keeping it legible
+		for(var/i = 1 to total)
+			RGB = ReadRGB(colors[i])
+			colorsum[1] += RGB[1]*RGB[1]
+			colorsum[2] += RGB[2]*RGB[2]
+			colorsum[3] += RGB[3]*RGB[3]
+		final_average = rgb(sqrt(colorsum[1]/total), sqrt(colorsum[2]/total), sqrt(colorsum[3]/total))
+	else
+		for(var/i = 1 to total)
+			RGB = ReadRGB(colors[i])
+			colorsum[1] += RGB[1]
+			colorsum[2] += RGB[2]
+			colorsum[3] += RGB[3]
+		final_average = rgb(colorsum[1]/total, colorsum[2]/total, colorsum[3]/total)
+	return final_average

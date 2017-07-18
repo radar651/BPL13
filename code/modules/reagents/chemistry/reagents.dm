@@ -149,3 +149,4 @@
 		to_chat(M, "<span class='warning'>You feel like you can't live without [name]!</span>")
 	if(prob(5))
 		to_chat(M, "<span class='warning'>You would DIE for some [name] right now!</span>")
+
